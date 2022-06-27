@@ -55,7 +55,6 @@
 // these objects will have similar properties and methods but different values
 
 // constructor() is used to set properties of an object
-// methods are always defined outside of constructor() function
 
 class User {
   constructor(name, email, age) {

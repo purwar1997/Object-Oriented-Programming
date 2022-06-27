@@ -54,7 +54,7 @@
 
 // constructor() inside class creates new objects
 // constructor() gets invoked everytime a new object is created
-// constructor() is only used to set the values of properties. It can not contain methods.
+// constructor() is used to set the values of properties.
 
 class User {
   constructor(name, email, password) {
