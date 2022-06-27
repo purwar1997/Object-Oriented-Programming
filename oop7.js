@@ -79,9 +79,9 @@ console.log(user2.aboutUser());
 
 // objects can be created using three ways
 // 1. using class
-// 2. using constructor
-// 3. using normal functions
+// 2. using constructor function
+// 3. using Object.create() method
 
 // methods of object can be present
 // 1. inside __proto__ property
-// 2. outside __proto__ property ( with properties)
+// 2. outside __proto__ property (with ordinary properties)
