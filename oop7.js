@@ -20,6 +20,8 @@ student1.course = 'BCA';
 student1.isGraduated = true;
 
 // another way of creating object
+// first argument -> methods inside __proto__ property
+// second argument -> setting values of properties
 const student2 = Object.create(studentProto, {
   name: { value: 'Suyash' },
   age: { value: 19 },
@@ -67,6 +69,19 @@ function Users(name, email, password) {
       },
     },
   });
+
+  return user;
+}
+
+// Alternate syntax for the above code can be
+function Users(name, email, password) {
+  const user = Object.create(userProto);
+  user.name = name;
+  user.email = email;
+  user.password = password;
+  user.aboutUser = function () {
+    return `${this.name}'s email id and password are ${this.email} and ${this.password} respectively`;
+  };
 
   return user;
 }
