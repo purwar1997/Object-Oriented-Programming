@@ -55,6 +55,6 @@ const tab1 = new Tabloid('Fashion week', 'Alice Joe', 2022, 'November');
 console.log(tab1.getMonth());
 console.log(tab1.summary());
 
-// setting constructors
+// setting constructors of child classes
 Magazine.prototype.constructor = Magazine;
 Tabloid.prototype.constructor = Tabloid;

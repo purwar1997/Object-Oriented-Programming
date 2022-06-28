@@ -36,6 +36,9 @@ const book = {
   },
 };
 
+// . -> dot notation accepts only final property names
+// [] -> bracket notation accepts dynamic variables as well as expressions
+
 console.log(book.author);
 console.log(book['pageCount']);
 
@@ -50,7 +53,7 @@ console.log(book[key]);
 
 // CreateBook() is a constructor function
 function CreateBook(title, author, year, pageCount, description) {
-  // this refers to the object being instansiated
+  // this refers to the object being instantiated
   this.title = title;
   this.author = author;
   this.year = year;

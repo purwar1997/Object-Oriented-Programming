@@ -19,7 +19,7 @@ student1.age = 24;
 student1.course = 'BCA';
 student1.isGraduated = true;
 
-// another way of creating object
+// Object.create() -> another way of creating object
 // first argument -> methods inside __proto__ property
 // second argument -> setting values of properties
 const student2 = Object.create(studentProto, {
@@ -100,3 +100,8 @@ console.log(user2.aboutUser());
 // methods of object can be present
 // 1. inside __proto__ property
 // 2. outside __proto__ property (with ordinary properties)
+
+// __proto__ property of any object contains three things :-
+// 1. constructor function
+// 2. methods defined inside __proto__
+// 3. child __proto__

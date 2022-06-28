@@ -1,5 +1,5 @@
 // classes in JS
-// class is just a syntactic sugar or an easy syntax to create objects
+// class is just a syntactic sugar or an easy way to create objects
 // because under the hood JS still create objects by prototype method
 
 class Account {
@@ -51,6 +51,12 @@ class Account {
     }
     return this;
   }
+
+  // static method
+  // can't be called upon objects but can be called upon classes
+  static typesOfAcc() {
+    console.log(`Only savings and current account can be opened`);
+  }
 }
 
 const account1 = new Account('Shubham', '01630000120', 3000000);
@@ -69,6 +75,12 @@ account1.transferMoney(10000, account2);
 account2.checkBalance();
 
 account2.transferMoney(30000, account1);
+
+// can't be called upon objects account1 and account2
+// account1.typesOfAcc()
+
+// can only be called upon class Account
+Account.typesOfAcc();
 
 // class inheritance
 // child class Bank will inherit all the properties and methods of its parent class Account
@@ -90,6 +102,12 @@ class Bank extends Account {
   contains() {
     return `${this.bankName} has ${this.accHolder}'s account`;
   }
+
+  // can't be called upon objects bank1 and bank2
+  // can only be called upon Bank class
+  static bestBank() {
+    console.log(`CitiBank is the best`);
+  }
 }
 
 const bank1 = new Bank('PNB', 'Etawah', 'Sandeep', '10646500123', 500000);
@@ -98,6 +116,7 @@ const bank2 = new Bank('IDBI', 'Noida', 'Tapas', '106566777655', 1000);
 bank1.transferMoney(100, account2);
 bank2.contains();
 bank1.bankInfo();
+Bank.bestBank();
 
 // method chaining
 // only possible if an object is returned
