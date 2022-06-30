@@ -46,6 +46,10 @@ console.log(str.length);
 // arr.__proto.__proto__.__proto__ => null
 // this is called prototype chaining
 
+// object
+// object.__proto__ => object
+// object.__proto__.__proto__ => null
+
 const user1 = {
   name: 'Shubham',
   age: 24,
