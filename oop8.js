@@ -40,7 +40,7 @@ console.log(str.length);
 // in JS, all objects have their prototype
 // prototype in itself is an object, so it also has its own prototype i.e. child prototype
 
-// arr => object
+// arr
 // arr.__proto__ => array
 // arr.__proto__.__proto__ => object
 // arr.__proto.__proto__.__proto__ => null
